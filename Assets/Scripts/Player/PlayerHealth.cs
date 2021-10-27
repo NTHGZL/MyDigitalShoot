@@ -16,6 +16,8 @@ public class PlayerHealth : MonoBehaviour
         if (healthpoint <= 0)
         {
             Destroy(gameObject);
+            Application.Quit();
+            Time.timeScale = 0;
         }
     }
     
