@@ -1,13 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerHealth : MonoBehaviour
 {
+    public AudioSource audioSource;
     public int healthpoint = 5;
+    
+    
+    
     void Start()
     {
         
+        
+        audioSource.Play();
     }
 
     // Update is called once per frame
@@ -16,7 +23,7 @@ public class PlayerHealth : MonoBehaviour
         if (healthpoint <= 0)
         {
             Destroy(gameObject);
-            Application.Quit();
+            audioSource.Stop();
             Time.timeScale = 0;
         }
     }
@@ -34,4 +41,6 @@ public class PlayerHealth : MonoBehaviour
             Destroy(other.gameObject);
         }
     }
+
+  
 }

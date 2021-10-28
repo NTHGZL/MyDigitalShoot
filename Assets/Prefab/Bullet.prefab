@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 186077497983873967}
   - component: {fileID: 5699279812782745155}
   - component: {fileID: -4877935155664504736}
-  - component: {fileID: 1533254228675110885}
   - component: {fileID: 6763295426859772042}
   m_Layer: 0
   m_Name: Bullet
@@ -115,14 +114,6 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
---- !u!81 &1533254228675110885
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8669323861967125895}
-  m_Enabled: 1
 --- !u!82 &6763295426859772042
 AudioSource:
   m_ObjectHideFlags: 0
