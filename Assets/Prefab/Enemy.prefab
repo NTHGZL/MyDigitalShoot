@@ -123,6 +123,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthpoint: 2
+  powerUp: {fileID: 169076, guid: d096b2e176fd8744bb6feb2dd2b160bf, type: 3}
 --- !u!1 &5986190540193424088
 GameObject:
   m_ObjectHideFlags: 0

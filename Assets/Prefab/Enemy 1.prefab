@@ -95,7 +95,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4be1bd7b18234d5409f00a536dd192d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthpoint: 2
+  healthpoint: 1
+  powerUp: {fileID: 134908, guid: b16d6b0dc82a2f64e93b38b2e642a18d, type: 3}
 --- !u!114 &8343057637477452195
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -108,7 +109,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b67d4b5abd84263b937387b3fe421f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 3
   goUp: 0
 --- !u!114 &7422672483285099996
 MonoBehaviour:

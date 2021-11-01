@@ -7,6 +7,11 @@ TagManager:
   - Bullet
   - Enemy
   - bulletEnemy
+  - HealthBonus
+  - ScoreBonus
+  - Bouclier
+  - ShieldBonus
+  - Shield
   layers:
   - Default
   - TransparentFX
@@ -41,6 +46,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: BackgroundImage
+    uniqueID: 104878729
+    locked: 0
+  - name: BackgroundObject
+    uniqueID: 4255698983
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

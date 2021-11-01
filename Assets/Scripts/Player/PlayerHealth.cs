@@ -7,12 +7,12 @@ public class PlayerHealth : MonoBehaviour
 {
     public AudioSource audioSource;
     public int healthpoint = 5;
-    
-    
+
+    public GameObject shield;
     
     void Start()
     {
-        
+        GameplayManager.Instance.life.text = $"Life : {healthpoint}";
         
         audioSource.Play();
     }
@@ -25,6 +25,7 @@ public class PlayerHealth : MonoBehaviour
             Destroy(gameObject);
             audioSource.Stop();
             Time.timeScale = 0;
+            GameplayManager.Instance.gameOverPanel.SetActive(true);
         }
     }
     
@@ -32,12 +33,37 @@ public class PlayerHealth : MonoBehaviour
     {
         if (other.CompareTag("Enemy"))
         {
+            
             healthpoint--;
+            GameplayManager.Instance.scoreInt -= 50;
+            GameplayManager.Instance.life.text = $"Life : {healthpoint}";
         }
         
         if (other.CompareTag("bulletEnemy"))
         {
+            GameplayManager.Instance.scoreInt -= 25;
+           
             healthpoint--;
+            GameplayManager.Instance.life.text = $"Life : {healthpoint}";
+            Destroy(other.gameObject);
+        }
+
+        if (other.CompareTag("HealthBonus"))
+        {
+            healthpoint += 10;
+            GameplayManager.Instance.life.text = $"Life : {healthpoint}";
+            Destroy(other.gameObject);
+        }
+        if (other.CompareTag("ScoreBonus"))
+        {
+            GameplayManager.Instance.scoreInt += 200;
+            GameplayManager.Instance.score.text = $"Score : {GameplayManager.Instance.scoreInt}";
+            Destroy(other.gameObject);
+        }
+
+        if (other.CompareTag("ShieldBonus"))
+        {
+            shield.SetActive(true);
             Destroy(other.gameObject);
         }
     }
