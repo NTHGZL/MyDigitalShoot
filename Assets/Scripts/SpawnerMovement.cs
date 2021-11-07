@@ -14,11 +14,11 @@ public class SpawnerMovement : MonoBehaviour
     public float time = 0.5f;
     public float repeatRate = 2f;
 
-    public GameObject gameObject;
-    public GameObject gameObject1;
-    public GameObject gameObject2;
+    public GameObject enemy;
+    public GameObject enemy1;
+    public GameObject enemy2;
 
-    private GameObject[] spawnObjetcs;
+  
     
     void Start()
     {
@@ -27,22 +27,22 @@ public class SpawnerMovement : MonoBehaviour
 
     void SpawnEnemy()
     {
-        Instantiate(randomObject(), transform.position, Quaternion.identity);
+        Instantiate(RandomObject(), transform.position, Quaternion.identity);
     }
 
-    private GameObject randomObject()
+    private GameObject RandomObject()
     {
         int randomInt = (int) Random.Range(0f, 3f);
         if (randomInt == 0)
         {
-            return gameObject;
+            return enemy;
         }else if (randomInt == 1)
         {
-            return gameObject1;
+            return enemy1;
         }
         else
         {
-            return gameObject2;
+            return enemy2;
         }
     }
     // Update is called once per frame

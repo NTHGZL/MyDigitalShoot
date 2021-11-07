@@ -6,7 +6,14 @@ using UnityEngine.SceneManagement;
 
 public class MenuManager : MonoBehaviour
 {
-    // Start is called before the first frame update
+    
+    public GameObject highScorePanel;
+
+    void Start()
+    {
+        highScorePanel.SetActive(false);
+    }
+
     public void PlayGame()
     {
         SceneManager.LoadScene(1);
@@ -17,6 +24,15 @@ public class MenuManager : MonoBehaviour
         Application.Quit();
     }
 
+    public void ShowHighScore()
+    {
+        highScorePanel.SetActive(true);
+    }
+    
+    public void ClosePanel()
+    {
+        highScorePanel.SetActive(false);
+    }
     // Update is called once per frame
     void Update()
     {

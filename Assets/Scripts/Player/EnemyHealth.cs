@@ -11,7 +11,7 @@ public class EnemyHealth : MonoBehaviour
    
     void Start()
     {
-        GameplayManager.Instance.score.text = $"Score : {GameplayManager.Instance.scoreInt}";
+      
     }
 
     // Update is called once per frame
@@ -21,7 +21,11 @@ public class EnemyHealth : MonoBehaviour
         {
             
             Destroy(gameObject);
-            Instantiate(powerUp, transform.position, transform.rotation);
+            if (GameplayManager.Instance.IsTimeForBonus())
+            {
+                Instantiate(powerUp, transform.position, transform.rotation);
+            }
+            
             GameplayManager.Instance.countOfDiedEnemy++;
             GameplayManager.Instance.scoreInt += 100;
             
@@ -36,9 +40,9 @@ public class EnemyHealth : MonoBehaviour
         {
             
             
-            GameplayManager.Instance.countOfDiedEnemy++;
+           
             Destroy(gameObject);
-            
+            GameplayManager.Instance.countOfDiedEnemy++;
 
         }
         

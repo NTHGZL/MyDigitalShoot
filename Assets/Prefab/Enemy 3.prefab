@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7403073494951310970}
   - component: {fileID: 7185659527496608075}
   - component: {fileID: 8150050353365316686}
-  - component: {fileID: 6009100814011268299}
+  - component: {fileID: 3543924569945212756}
   m_Layer: 0
   m_Name: Enemy 3
   m_TagString: Enemy
@@ -110,7 +110,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &6009100814011268299
+--- !u!114 &3543924569945212756
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -119,10 +119,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 4550321500694185688}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4be1bd7b18234d5409f00a536dd192d3, type: 3}
+  m_Script: {fileID: 11500000, guid: 408ea5e37556d112ebe0ad5161658a32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthpoint: 2
+  healthpoint: 1
   powerUp: {fileID: 134908, guid: b16d6b0dc82a2f64e93b38b2e642a18d, type: 3}
 --- !u!1 &5986190540193424088
 GameObject:

@@ -12,6 +12,7 @@ TagManager:
   - Bouclier
   - ShieldBonus
   - Shield
+  - Ground
   layers:
   - Default
   - TransparentFX

@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 7263244760194427428}
   - component: {fileID: 99966153784106936}
   - component: {fileID: 8150050353365316686}
-  - component: {fileID: 6009100814011268299}
   - component: {fileID: 8343057637477452195}
   - component: {fileID: 7422672483285099996}
+  - component: {fileID: 2727997242817317471}
   m_Layer: 0
   m_Name: Enemy 4
   m_TagString: Enemy
@@ -83,20 +83,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &6009100814011268299
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4550321500694185688}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4be1bd7b18234d5409f00a536dd192d3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  healthpoint: 2
-  powerUp: {fileID: 134908, guid: b16d6b0dc82a2f64e93b38b2e642a18d, type: 3}
 --- !u!114 &8343057637477452195
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -125,6 +111,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletenemy: {fileID: 8669323861967125895, guid: f276122fa91c5448397da762897f4a02, type: 3}
   bulletOffset: {x: 0, y: 0, z: 0}
+--- !u!114 &2727997242817317471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4550321500694185688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 408ea5e37556d112ebe0ad5161658a32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  healthpoint: 1
+  powerUp: {fileID: 169076, guid: d096b2e176fd8744bb6feb2dd2b160bf, type: 3}
 --- !u!1 &5986190540193424088
 GameObject:
   m_ObjectHideFlags: 0
